@@ -1,0 +1,76 @@
+body{
+    position: relative;
+}
+.fixed-top{
+  background-color:  rgba(87, 161, 231, 0.123) !important;
+}
+
+.jumbotron{
+  padding-top: 30vh;
+  border-radius: 0px;
+  color: black;
+}
+
+#jumbotron-bg{
+    background-image: url(images/4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.container-content{
+  width: 70%;
+  display: gird;
+  grid: repeat(4,40vh) auto-flow/1fr 1fr;
+  margin-left: auto;
+}
+
+.container-content>h2{
+  text-align: left;
+}
+.container-content>p{
+  text-align: left;
+}
+.my-row{
+  height: 30vh;
+}
+
+.jumbotron p{
+    font-weight: bold;
+}
+.menu a{
+    padding-left: 25px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.come-in {
+    transform: translateX(65%);
+    animation: come-in 1.2s ease forwards;
+  }
+  .come-in:nth-child(odd) {
+    animation-duration: 0.6s; /* So they look staggered */
+  }
+  
+  @keyframes come-in {
+    to { transform: translateX(0); }
+  }
+
+  @media only screen and (max-width: 576px){
+    .jumbotron-heading{
+      font-size: 1.5rem;   
+      padding-top: 30px;
+    }
+    .lead{
+      font-size: 1.1rem;
+    }
+    #jumbotron-bg{
+      height: 60vh;
+    }
+    .jumbotron{
+      padding-top: 10vh;
+    }
+  };
